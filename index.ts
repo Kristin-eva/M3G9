@@ -72,9 +72,7 @@ else{
 // Create a statement that checks the 2nd person in the array for their nationality. If the person’s country is Iceland, output “Hæ”, if he/she is from Spain output “Hola”, if he/she is from Korea output “여보세요”). If the country is none of the above, output “Hello”. Tip: a switch statement might be a good fit for this task.
 
 // Check the nationality of the 2nd person and output greeting based on their country
-const secondPersonCountry = people[1].country;
-
-switch (secondPersonCountry) {
+switch (people[1].country) {
   case "Iceland":
     console.log("Hæ");
     break;
@@ -88,9 +86,8 @@ switch (secondPersonCountry) {
     console.log("Hello");
 }
 // Use a ternary operator to check if the 2nd person's name is longer than 5 characters
-const secondPersonNameLength = people[1].name.length;
-const message = secondPersonNameLength > 5 
+console.log(
+    people[1].name.length
   ? "The 2nd person's name is longer than 5 characters." 
-  : "The 2nd person's name is 5 characters or shorter.";
-
-console.log(message);
+  : "The 2nd person's name is 5 characters or shorter."
+);
